@@ -9,7 +9,7 @@ namespace WeatherApp
         public MainPage()
         {
             InitializeComponent();
-            _weatherService = new Services.WeatherService("f7864df7a8367f5fcd8f590f59b6c0da"); // Replace with your API key
+            _weatherService = new Services.WeatherService("f7864df7a8367f5fcd8f590f59b6c0da");  
             _geolocation = Geolocation.Default;
 
             this.Appearing += async (s, e) => await RefreshWeather();
